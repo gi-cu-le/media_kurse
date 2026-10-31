@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Portfolio</title>
+    
+    <!-- Här laddar vi in Bootstrap (CSS-ramverket) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 1. NAVIGERINGSMENY -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Gicu Cucu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#om-mig">Om mig</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projekt">Projekt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO-SEKTION (Presentation) -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Hej, jag heter Gicu!</h1>
+            <p class="lead">Jag är en blivande utvecklare som älskar att bygga saker för webben.</p>
+        </div>
+    </header>
+
+    <!-- 3. OM MIG -->
+    <section id="om-mig" class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+            
+                <div class="bg-secondary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 200px; height: 200px;">
+                    <span class="fs-1"><img src="pozamea.png" alt="Bild på mig" class="rounded-circle img-fluid" style="width: 200px; height: 200px; object-fit: cover;"></span>
+                </div>
+            </div>
+            <div class="col-md-8 mt-4 mt-md-0">
+                <h2>Om mig</h2>
+                <p>Jag jobbar som projekt utveklare inom kultur, med att organisera kulturella evenemag och erbjuda lokala och internationella samrbete mellan olika aktörer inom kulturella och sociala områden.</p>
+                <p>Jag gilar  läsa historia.Man lär sig allting någonting från gamla tider.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PROJEKT (Här visar du upp dina tidigare arbeten) -->
+    <section id="projekt" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Mina Projekt</h2>
+            <div class="row">
+                
+                <!-- Projekt 1: ockchain-projekt -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">PensionLedger (Blockchain)</h5>
+                            <a href="https://github.com/gi-cu-le/git-curs-media/blob/master/final_pension_ledger.html" class="btn btn-outline-success btn-sm mt-3" target="_blank">Visa projekt</a>
+                            <p class="card-text">En prototyp för ett säkert pensionssystem byggt med blockchain-teknik och HTML/CSS.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekt 2:  -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Social Behavior Simulation</h5>
+                             <img src="figure_1.png" class="card-img-top" alt="Simulering av social spridning">
+                            <p class="card-text">En simuleringsmodell i Python som analyserar hur kulturella och sociala beteenden sprider sig i ett nätverk. Projektet använder Barabási-Albert-modellen för att visualisera hur idéer när en "tipping point".</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekt 3-->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">SOI - Städ & Omsorg</h5>
+                            <p class="card-text">En webbplats för ett företag inom hem- och städtjänster. Fokus på ren design, tydlig navigation och användarvänlighet.</p>
+                             <ul class="list-unstyled mt-3">
+                                <li><strong>Tekniker:</strong> HTML, CSS</li>
+                                <li><strong>Typ:</strong> Webbutveckling</li>
+                             </ul>
+                             <a href="https://github.com/gi-cu-le/SOI-websidan" class="btn btn-outline-success btn-sm mt-3" target="_blank">Visa projekt</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. KONTAKT -->
+    <section id="kontakt" class="container my-5 text-center">
+        <h2>Kontakta mig</h2>
+        <p class="lead">Du kan nå mig på:</p>
+        <p>📧 anaidap95@gmail.com</p>
+        </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2026 Ditt Namn. Alla rättigheter förbehållna.</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
